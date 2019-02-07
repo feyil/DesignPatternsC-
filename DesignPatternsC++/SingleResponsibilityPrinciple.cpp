@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// Journal Class Definitions
 class Journal {
 public:
 	Journal(const string& title) : m_title{ title } {
@@ -24,6 +25,8 @@ private:
 	vector<string> m_entries;
 };
 
+// Journal implementations
+
 void Journal::add(const string& entry) {
 	static int count = 1;
 	m_entries.push_back(boost::lexical_cast<string>(count++) + ": " + entry);
@@ -35,6 +38,7 @@ void Journal::save(const string& filename) {
 		ofs << s << endl;
 }
 
+// PersistenceManager definitions
 class PersistenceManager {
 public:
 	static void save(Journal& j, const string& filename) {
@@ -44,15 +48,15 @@ public:
 	}
 };
 
-int main()
-{
-	// stack allocation
-	Journal journal{ "Dear Diary" };
-	journal.add("I ate a bug");
-	journal.add("I cried today");
-
-	// journal.save("diary.txt");
-
-	PersistenceManager::save(journal, "diary.txt");
-
-}
+//int main()
+//{
+//	// stack allocation
+//	Journal journal{ "Dear Diary" };
+//	journal.add("I ate a bug");
+//	journal.add("I cried today");
+//
+//	// journal.save("diary.txt");
+//
+//	PersistenceManager::save(journal, "diary.txt");
+//
+//}

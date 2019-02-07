@@ -26,6 +26,9 @@
     <ClCompile Include="SingleResponsibilityPrinciple.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="OpenClosedPrinciple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
