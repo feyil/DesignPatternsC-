@@ -154,6 +154,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DependencyInversionPrinciple.cpp" />
     <ClCompile Include="InterfaceSegregationPrinciple.cpp" />
     <ClCompile Include="LiskovSubstitionPrinciple.cpp" />
     <ClCompile Include="OpenClosedPrinciple.cpp" />
