@@ -1,6 +1,6 @@
 # Design Patterns with C++
 
-Design Pattern implementation with C++ (Tutorial)
+Design Pattern implementations with C++ (Tutorial)
 
 Created to understand design patterns deeply. These code written by following a series of tutorial. I am putting these to
 access whenever I need to recap design patterns.
