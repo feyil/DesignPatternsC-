@@ -125,31 +125,31 @@ public:
 	}
 };
 
-int main() {
-	Product apple{ "Apple", Color::green, Size::small };
-	Product tree{ "Tree", Color::green, Size::large };
-	Product house{ "House", Color::blue, Size::large };
-
-	const vector<Product*> all{ &apple, &tree, &house };
-
-	//ProductFilter filter;
-	//vector<Product*> result = filter.by_color(all, Color::green);
-	//for (auto& i : result) {
-	//	cout << i->get_name() << endl;
-	//}
-
-	BetterFilter bf;
-	ColorSpecification green(Color::green);
-	vector<Product*> green_things = bf.filter(all, green);
-	for (auto& x : green_things)
-		cout << x->get_name() << " is green\n";
-
-	SizeSpecification large(Size::large);
-	AndSpecification<Product> green_and_large(green, large);
-
-	vector<Product*> result = bf.filter(all, green_and_large);
-	for (auto& i : result)
-		cout << i->get_name() << endl;
-
-	return 0;
-}
+//int main() {
+//	Product apple{ "Apple", Color::green, Size::small };
+//	Product tree{ "Tree", Color::green, Size::large };
+//	Product house{ "House", Color::blue, Size::large };
+//
+//	const vector<Product*> all{ &apple, &tree, &house };
+//
+//	//ProductFilter filter;
+//	//vector<Product*> result = filter.by_color(all, Color::green);
+//	//for (auto& i : result) {
+//	//	cout << i->get_name() << endl;
+//	//}
+//
+//	BetterFilter bf;
+//	ColorSpecification green(Color::green);
+//	vector<Product*> green_things = bf.filter(all, green);
+//	for (auto& x : green_things)
+//		cout << x->get_name() << " is green\n";
+//
+//	SizeSpecification large(Size::large);
+//	AndSpecification<Product> green_and_large(green, large);
+//
+//	vector<Product*> result = bf.filter(all, green_and_large);
+//	for (auto& i : result)
+//		cout << i->get_name() << endl;
+//
+//	return 0;
+//}
