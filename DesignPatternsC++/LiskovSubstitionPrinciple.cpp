@@ -41,7 +41,7 @@ public:
 };
 
 class RectangleFactory {
-	static Rectangle create_rectanlge(int w, int h);
+	static Rectangle create_rectangle(int w, int h);
 	static Rectangle create_square(int size);
 };
 
@@ -52,12 +52,12 @@ void process(Rectangle& r) {
 	cout << "expected area = " << (w * 10) << ", got " << r.area() << endl;
 }
 
-int main() {
-	Rectangle r{ 5,5 };
-	process(r);
-
-	Square s{ 5 };
-	process(s);
-
-	return 0;
-}
+//int main() {
+//	Rectangle r{ 5,5 };
+//	process(r);
+//
+//	Square s{ 5 };
+//	process(s);
+//
+//	return 0;
+//}
